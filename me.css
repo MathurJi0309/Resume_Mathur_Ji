@@ -5,7 +5,8 @@ body{
 
 #body-header{
     height: 64vh;
-    background-image: url(image/focus.jpg.jpg);
+    background-image: url(image/main.jpg);
+    opacity: 0.7;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -66,6 +67,38 @@ border-radius: 50%;
     box-shadow: 0px 0px 6px 4px rgba(230,196,196,0.4);
     text-decoration: none;
 }
+section{
+    width: 100%;
+    height:auto;
+    /*height: 75vh;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section:nth-child(2n){
+    background-color: lightslategrey;
+}
+section:nth-child(2n+1){
+    background-color: white;
+}
+section:target{
+    background-color: lightblue;
+}
+
+.section-heading{
+    width: auto;
+    padding: 20px 10px 10px ;
+    font-weight: 400;
+}
+.section-heading span{
+    font-size: 40px;
+    color: aqua;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+
+}
+
 #about{
     height: auto;
     width: 100%;
@@ -75,6 +108,7 @@ border-radius: 50%;
     width: 12rem;
     margin:auto;
     margin-top: -10vh;
+    position: relative;
 }
 #my-image img{
     height: 100%;
@@ -89,7 +123,85 @@ border-radius: 50%;
     width: auto;
 }
 #about-content{
-    height: 80%;
+    padding: 10px;
+    height: 100%;
     width: 70%;
     margin: auto;
-    }
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    color: grey;
+    line-height: 28px;
+    font-weight: 100;
+    font-size: 1.1rem;
+
+}
+
+.skills-display{
+    width: 70%;
+    /*height: 100px;
+    border: 2px solid black;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.skill-progress{
+    width: 7rem;
+    height:1.4rem;
+    background-color: lightgrey;
+    border-radius: 0.8rem;
+   /* border: 2px solid black;*/
+}
+.skill-progress>div{
+    border-radius: 20px 0px 0px 20px;
+}
+.skill-name span{
+    color: white;
+    font-size: 1rem;
+    margin-left:10px;
+    margin-top: -5px;
+
+}
+
+.mb75px{
+    margin-bottom: 75px;
+}
+.text-highlight{
+    color: aqua;
+    font-weight: 600;
+}
+.mb-blue{
+    background-color: #7857a4;
+}
+
+.eighty-five-percent{
+    width: 85%;
+    height: inherit;
+    /*border-top-left-radius:0.8rem ;
+    border-bottom-left-radius: 0.8rem;*/
+}
+/*Timeline Experince */
+.timeline{
+    position: relative;
+    width: 75%;
+    border: 2px solid black ;
+}
+.timeline-box{
+    position: relative;
+    margin: 5px;
+    width: 40%;
+    left: 5%;
+    min-height: 150px;
+    border: 2px solid black ;
+}
+.timeline-box:nth-child(2n){
+    left: 53%;
+}
+
+
+
+/*for contact section*/
+#Contact{
+    border: 2px solid black;
+    background-image: linear-gradient(to top right, purple 15%,blue);
+}
